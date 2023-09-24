@@ -6,6 +6,7 @@
 
 ```bash
 git clone https://github.com/oxy-Op/chatgpt-ui-clone.git
+cd chatgpt-ui-clone
 npm install
 npm run dev
 ```
