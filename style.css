@@ -1,0 +1,119 @@
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* Remove arrow buttons and background, style the scrollbar thumb */
+/* Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+  /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #BBBBC6;
+  border-radius: 14px;
+  /* Color of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+  /* Color of the scrollbar thumb on hover */
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+  /* Remove the background of the scrollbar track */
+}
+
+/* Hide scrollbar buttons */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* div {
+  border: solid 1px red;
+} */
+
+.leftpane,
+.main {
+  height: 100%;
+}
+
+#sidebar {
+  width: 260px;
+  transition: width 0.3s ease
+}
+
+.leftpane {
+  background-color: #212023;
+  min-width: 250px;
+}
+
+.main {
+  background-color: #343541;
+  position: relative;
+}
+
+.mid-navbar {
+  border-bottom: solid 1px;
+  border-color: hsla(0, 0%, 100%, .2);
+}
+
+.tip {
+  background-color: #343541;
+}
+
+.tip:hover {
+  background-color: #40414F;
+}
+
+#sidebarbtnopen:hover {
+  background-color: #40414F !important;
+}
+
+.chat {
+  border-radius: 6px;
+  transition: background 0.3s ease-in-out;
+}
+
+.chat:hover {
+  background: #40414F !important;
+}
+
+.items {
+  transition: background 0.3s ease-in-out;
+}
+
+.items:hover {
+  background: #40414F !important;
+}
+
+
+#userinfo {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#send_query {
+  resize: none;
+  max-height: 200px;
+  height: auto;
+  min-height: 30px;
+  font-weight: 400;
+  color: white;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#send_query::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+#send_query:focus {
+  outline: none;
+}
